@@ -13,6 +13,26 @@ auto main(int argc, char** argv) -> int
     fmt::print("Hello, {}!\n", argv[0]);
 
     List_t* pList = NewList();
+    ListNode_t* pNode = NULL;
+    for(int i=0; i<5; i++) {
+        pNode = NewListNode();
+        pNode->data = i;
+        InsertIntoLinkedList(pList,pNode);
+    }
+
+    ListNode_t* pElem = NewListNode();
+    pElem->data = 42;
+    pNode = pList->pHead; // Insert into at the head
+    InsertIntoLinkedListAfterNode(pList,pNode,pElem);
+    
+    ListNode_t* pElem2 = NewListNode();
+    pElem2->data = 99;
+    pNode = pList->pTail; // Insert into at the tail
+    InsertIntoLinkedListAfterNode(pList,pNode,pElem2);
+    
+    //RemoveFromList(pList,pElem);
+
+    
     FreeList(pList);
     return 0; /* exit gracefully*/
 }
