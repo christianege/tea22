@@ -40,6 +40,15 @@ Zu implementieren sind die folgenden Funktionalitäten:
 
 Beachten Sie die sonderform der leeren Liste.
 
+# Bei Problemen mit Python PIL
+
+Das kann durch einen neuen Codespace verursacht worden sein...
+
+```sh
+sudo apt-get update
+sudo apt-get install python3-pil
+```
+
 ## Lernziele
 
 - Vertiefung der git Kenntnisse
