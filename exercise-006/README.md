@@ -40,6 +40,8 @@ Zu implementieren sind die folgenden Funktionalitäten:
 
 Beachten Sie die sonderform der leeren Liste.
 
+Für die Verwendung von [malloc](https://en.cppreference.com/w/c/memory/malloc) und [free](https://en.cppreference.com/w/c/memory/free) benötigen Sie den Header `<stdlib.h>` in ihrem Projekt. 
+
 # Bei Problemen mit Python PIL
 
 Das kann durch einen neuen Codespace verursacht worden sein...
