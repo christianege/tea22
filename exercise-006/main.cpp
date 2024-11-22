@@ -1,5 +1,6 @@
 #include <fmt/chrono.h>
 #include <fmt/format.h>
+#include "linkedlist.h"
 
 
 auto main(int argc, char** argv) -> int
@@ -11,7 +12,7 @@ auto main(int argc, char** argv) -> int
      */
     fmt::print("Hello, {}!\n", argv[0]);
 
-   
-
+    List_t* pList = NewList();
+    FreeList(pList);
     return 0; /* exit gracefully*/
 }

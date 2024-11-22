@@ -12,6 +12,15 @@ typedef struct List {
     unsigned int size;
 } List_t;
 
+ListNode_t* NewListNode(void);
+void FreeListNode(ListNode_t* elem);
 
+List_t* NewList(void);
+void FreeList(List_t*);
+
+int InsertIntoLinkedList(List_t* list, ListNode_t* elem);
+int InsertIntoLinkedListAfterNode(List_t* list, ListNode_t* node /* the node we insert the element into */, ListNode_t* elem);
+int RemoveFromList(List_t* list, ListNode_t* elem);
+ListNode_t* GetNext(const List_t* list, ListNode_t* elem);
 
 #endif
