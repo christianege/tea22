@@ -30,8 +30,9 @@ auto main(int argc, char** argv) -> int
     pNode = pList->pTail; // Insert into at the tail
     InsertIntoLinkedListAfterNode(pList,pNode,pElem2);
     
-    //RemoveFromList(pList,pElem);
-
+    RemoveFromList(pList,pElem);
+    RemoveFromList(pList,pList->pHead);
+    RemoveFromList(pList,pList->pTail);
     
     FreeList(pList);
     return 0; /* exit gracefully*/
